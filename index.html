@@ -105,11 +105,6 @@ body{background:#0f1724;font-family:'Microsoft YaHei',sans-serif;color:#e0e8f0}
 <div class="panel"><div class="panel-title">👍 正面典型评论</div><ul class="comment-list" id="posComments"></ul></div>
 <div class="panel"><div class="panel-title">👎 负面典型评论</div><ul class="comment-list" id="negComments"></ul></div>
 </div>
-<!-- 中性评论 -->
-<div class="panel" style="margin-bottom:20px">
-<div class="panel-title">🔘 中性/待判定评论 <span style="font-size:11px;color:#667799;font-weight:normal">— 供人工审查，确认是否存在误判</span></div>
-<ul class="comment-list" id="neuComments"></ul>
-</div>
 <!-- 武器专栏 -->
 <div class="panel" style="margin-bottom:20px">
 <div class="panel-title">🔫 武器/数值专栏 <span style="font-size:11px;color:#667799;font-weight:normal">— 供武器策划查看</span></div>
@@ -172,7 +167,6 @@ document.getElementById("kwCloud").innerHTML=Object.entries(d.keywords||{}).slic
 function cmtHtml(samples,cls){if(!samples||!samples.length)return`<li class="comment-item ${cls}" style="color:#667799">今日无新增${cls==="weapon"?"武器相关":""}评论 ✅</li>`;return samples.map(c=>{const sc=srcColors[c.source]||"#667799";const lb=c.url?`<a class="link-btn" href="${c.url}" target="_blank">查看原帖→</a>`:"";const st=cls==="weapon"?`<span class="sent-tag ${c.sentiment==="positive"?"pos":c.sentiment==="negative"?"neg":""}">${c.sentiment==="positive"?"好评":c.sentiment==="negative"?"差评":"中性"}</span>`:"";return`<li class="comment-item ${cls}"><div class="comment-meta"><span class="src-tag" style="background:${sc}">${c.source||"未知"}</span>${st}${lb}</div><div>${c.text}</div></li>`}).join("")}
 document.getElementById("posComments").innerHTML=cmtHtml(d.positive_samples,"pos");
 document.getElementById("negComments").innerHTML=cmtHtml(d.negative_samples,"neg");
-document.getElementById("neuComments").innerHTML=cmtHtml(d.neutral_samples||[],"neu");
 document.getElementById("weaponComments").innerHTML=cmtHtml(d.weapon_comments||[],"weapon");
 }
 
