@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CFM赏金爆破 · 上线首周舆情总结报告</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0f1724;font-family:'Microsoft YaHei','PingFang SC',sans-serif;color:#d0d8e8;line-height:1.8}
+.report{max-width:960px;margin:0 auto;padding:40px 32px}
+h1{font-size:26px;color:#fff;text-align:center;margin-bottom:4px}
+h1 span{color:#d4a017}
+.subtitle{text-align:center;color:#667799;font-size:13px;margin-bottom:36px}
+h2{font-size:18px;color:#fff;margin:32px 0 16px;padding-bottom:8px;border-bottom:2px solid #1e2d44}
+h2 .emoji{margin-right:6px}
+h3{font-size:15px;color:#d4a017;margin:20px 0 10px}
+p{margin-bottom:12px;font-size:14px}
+.highlight{color:#4ade80;font-weight:bold}
+.warn{color:#f87171;font-weight:bold}
+.neutral-text{color:#fbbf24}
+.dim{color:#667799;font-size:12px}
+
+/* 数据卡片 */
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0}
+.stat-card{background:#162033;border-radius:12px;padding:16px;text-align:center;border:1px solid #1e2d44}
+.stat-value{font-size:28px;font-weight:bold}
+.stat-label{font-size:11px;color:#667799;margin-top:4px;text-transform:uppercase;letter-spacing:1px}
+.green{color:#4ade80} .red{color:#f87171} .yellow{color:#fbbf24} .blue{color:#60a5fa}
+
+/* 趋势表格 */
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13px}
+th{background:#1a2744;color:#8899bb;padding:10px 12px;text-align:left;font-weight:600;border-bottom:2px solid #2a3d5a}
+td{padding:9px 12px;border-bottom:1px solid #1e2d44}
+tr:hover{background:rgba(255,255,255,.02)}
+.trend-up{color:#4ade80} .trend-down{color:#f87171} .trend-flat{color:#fbbf24}
+
+/* 评论引用 */
+.quote{background:#1a2744;border-left:3px solid;padding:12px 16px;margin:8px 0;border-radius:0 8px 8px 0;font-size:13px}
+.quote.pos{border-color:#4ade80;color:#b0ddbb}
+.quote.neg{border-color:#f87171;color:#ddbbbb}
+.quote.sug{border-color:#60a5fa;color:#b0c8dd}
+.quote .meta{font-size:11px;color:#556688;margin-top:4px}
+
+/* 洞察卡片 */
+.insight-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+.insight-card{background:#162033;border-radius:10px;padding:16px;border:1px solid #1e2d44}
+.insight-card h4{font-size:13px;color:#fff;margin-bottom:8px}
+.insight-card p{font-size:12px;color:#99aabb;margin:0}
+.insight-card .tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:10px;font-weight:bold;margin-bottom:8px}
+.tag-pos{background:rgba(74,222,128,.15);color:#4ade80}
+.tag-neg{background:rgba(248,113,113,.15);color:#f87171}
+.tag-sug{background:rgba(96,165,250,.15);color:#60a5fa}
+
+/* 建议 */
+.rec-list{list-style:none;margin:12px 0}
+.rec-list li{padding:10px 14px;margin:6px 0;background:#1a2744;border-radius:8px;font-size:13px;border-left:3px solid #d4a017}
+.rec-list li strong{color:#d4a017}
+
+.footer{text-align:center;color:#445566;font-size:11px;margin-top:40px;padding-top:20px;border-top:1px solid #1e2d44}
+
+@media(max-width:768px){
+  .report{padding:20px 16px}
+  h1{font-size:20px}
+  .stats-row{grid-template-columns:repeat(2,1fr)}
+  .insight-grid{grid-template-columns:1fr}
+  .stat-value{font-size:22px}
+}
+</style>
+</head>
+<body>
+<div class="report">
+
+<h1>CFM<span>赏金爆破</span> · 上线首周舆情总结报告</h1>
+<p class="subtitle">监测周期：2026年4月16日（上线）— 4月20日 | 数据来源：B站评论/弹幕 + TapTap</p>
+
+<!-- ═══ 一、核心数据 ═══ -->
+<h2><span class="emoji">📊</span>一、核心数据概览</h2>
+
+<div class="stats-row">
+  <div class="stat-card"><div class="stat-value blue">343</div><div class="stat-label">评论总量</div></div>
+  <div class="stat-card"><div class="stat-value green">18.1%</div><div class="stat-label">正面占比</div></div>
+  <div class="stat-card"><div class="stat-value red">23.0%</div><div class="stat-label">负面占比</div></div>
+  <div class="stat-card"><div class="stat-value yellow">58.9%</div><div class="stat-label">中性/观望</div></div>
+</div>
+
+<p>赏金爆破上线5天，共监测到 <strong>343条玩家评论</strong>（去重后，不含弹幕），覆盖B站43个固定视频+32个动态发现视频+TapTap。整体舆论以<span class="neutral-text">观望为主</span>，正面评价（18.1%）略低于负面（23.0%），但<span class="highlight">趋势在转好</span>。</p>
+
+<h3>每日情绪走势</h3>
+<table>
+  <tr><th>日期</th><th>新增评论</th><th>🟢 正面</th><th>🔴 负面</th><th>⚪ 中性</th><th>趋势判断</th></tr>
+  <tr><td>4/17（上线首日）</td><td>186条</td><td>16.7%</td><td>25.8%</td><td>57.5%</td><td class="trend-flat">首日讨论爆发，正负分化</td></tr>
+  <tr><td>4/18（第2天）</td><td>38条</td><td class="trend-up">28.9%</td><td class="trend-down">23.7%</td><td>47.4%</td><td class="trend-up">正面回升，体验反馈增多</td></tr>
+  <tr><td>4/19（第3天）</td><td>32条</td><td class="trend-down">9.4%</td><td class="trend-up">31.2%</td><td>59.4%</td><td class="trend-down">体验问题集中爆发</td></tr>
+  <tr><td>4/20（第4天）</td><td>87条</td><td class="trend-up">19.5%</td><td class="trend-down">13.8%</td><td>66.7%</td><td class="trend-up">负面回落，观望增加</td></tr>
+</table>
+
+<p><strong>走势解读：</strong>上线首日正负面同时爆发，第2天正面回升到29%，第3天因体验问题（又臭又长/辅瞄/延迟）集中反馈导致负面升至31%，第4天负面显著回落至14%，正面回到19.5%。<span class="highlight">整体呈"震荡上行"态势，负面高峰已过。</span></p>
+
+<!-- ═══ 二、正面洞察 ═══ -->
+<h2><span class="emoji">🟢</span>二、正面洞察 — 玩家在夸什么</h2>
+
+<div class="insight-grid">
+  <div class="insight-card">
+    <span class="tag tag-pos">核心卖点</span>
+    <h4>「数值统一，枪法说了算」</h4>
+    <p>最强正面信号。大量玩家（含V9/V10氪佬）认可赏金爆破的核心设计——离开轮椅枪后纯靠操作决胜，"不是我的枪强，而是我强"成为高频表达。</p>
+  </div>
+  <div class="insight-card">
+    <span class="tag tag-pos">情感共鸣</span>
+    <h4>「吃灰皮肤终于有用了」</h4>
+    <p>非英雄级武器可以当皮肤用、"火麒麟雷掣终于又有出场机会了"——仓库资产激活带来强烈的惊喜感和获得感。</p>
+  </div>
+  <div class="insight-card">
+    <span class="tag tag-pos">氪金支持</span>
+    <h4>「V9/V10氪佬也在支持」</h4>
+    <p>"我V10也想玩这个模式""我充几万的支持这个改动"——氪金玩家中有相当一部分是正面的，打破了"氪佬一定反对"的预设。</p>
+  </div>
+  <div class="insight-card">
+    <span class="tag tag-pos">选择自由</span>
+    <h4>「各玩各的，多一个选择」</h4>
+    <p>"原来的模式又没下架，喜欢玩哪个玩哪个"——"多一个选择"的定位被部分玩家接受，是最安全的官方口径方向。</p>
+  </div>
+</div>
+
+<h3>TOP高赞正面评论</h3>
+<div class="quote pos">"模式不错，但放错位置了，还不如改成7分胜利放到巅峰赛，让喜欢巅峰赛的玩家去公平竞技，这样子起点一样，更能体现实力差距"<div class="meta">61赞 · B站评论</div></div>
+<div class="quote pos">"公平模式没啥好喷的，打自己想玩的模式就行"<div class="meta">53赞 · B站评论</div></div>
+<div class="quote pos">"微氪和零氪玩赏金爆破公平互啄，大家都有美好的体验"<div class="meta">49赞 · B站评论</div></div>
+<div class="quote pos">"我V9挺喜欢这种模式的"<div class="meta">43赞 · B站评论</div></div>
+<div class="quote pos">"我老早就不氪金了…有这个模式我为什么还要去给你们氪老当人头刷啊，最起码这个模式公平些"<div class="meta">27赞 · B站评论</div></div>
+
+<!-- ═══ 三、负面预警 ═══ -->
+<h2><span class="emoji">🔴</span>三、负面预警 — 玩家在骂什么</h2>
+
+<div class="insight-grid">
+  <div class="insight-card">
+    <span class="tag tag-neg">🔴 高危</span>
+    <h4>「又臭又长」— 局数/时长是头号痛点</h4>
+    <p>8局制（最长15回合）被大量吐槽"手游整那么长时间"。高赞评论几乎一边倒要求改为5局制或提高加分。<strong>这是最集中、最高频的负面议题。</strong></p>
+  </div>
+  <div class="insight-card">
+    <span class="tag tag-neg">⚠️ 中危</span>
+    <h4>「氪金白费」— 付费用户焦虑</h4>
+    <p>"你们都去玩赏金爆破了我氪出来的武器打谁"——部分氪金玩家担忧数值统一后氪金失去意义。但注意：也有V9/V10公开支持，并非铁板一块。</p>
+  </div>
+  <div class="insight-card">
+    <span class="tag tag-neg">⚠️ 中危</span>
+    <h4>「太晚了/必暴死」— 悲观论调</h4>
+    <p>"做了十年的鸡现在想从良""cfm这点人这样整就是加速死亡"——对CFM整体的不信任投射到赏金爆破上。属于历史包袱，非模式本身问题。</p>
+  </div>
+  <div class="insight-card">
+    <span class="tag tag-neg">💡 观察</span>
+    <h4>技术体验问题</h4>
+    <p>假红/延迟/闪退/辅瞄限制——这些是CFM老问题，赏金爆破放大了（因为公平模式下技术问题更影响体验）。</p>
+  </div>
+</div>
+
+<h3>TOP高赞负面评论</h3>
+<div class="quote neg">"不是他良心发现了，实际上这个也有点拉，只是过去大半年削福利削的太过分了，衬托出来的"<div class="meta">195赞 · B站评论 — 嘲讽策划被逼做事</div></div>
+<div class="quote neg">"想转皮肤导向早干嘛去了。做了十年的鸡现在想从良了"<div class="meta">124赞 · B站评论 — 为时已晚论</div></div>
+<div class="quote neg">"省流：你们都去玩赏金爆破了我氪出来肝出来的武器打谁？"<div class="meta">54赞 · B站评论 — 氪金焦虑</div></div>
+<div class="quote neg">"把赏金爆破改成5局制吧 8局太长了或者把加分给高一点"<div class="meta">22赞 · B站评论 — 局数/加分诉求</div></div>
+
+<!-- ═══ 四、玩家核心诉求 ═══ -->
+<h2><span class="emoji">💡</span>四、玩家核心诉求 TOP 5</h2>
+
+<table>
+  <tr><th>#</th><th>诉求方向</th><th>玩家原话</th><th>热度</th></tr>
+  <tr><td>1</td><td><strong>加分太少</strong></td><td>"这新模式想要火，那加分就必须得多"</td><td>🔥🔥🔥 55赞</td></tr>
+  <tr><td>2</td><td><strong>枪械种类少</strong></td><td>"加分变多，枪械变多，刀的种类尽量全，屠龙真看不下去了"</td><td>🔥🔥🔥 52赞</td></tr>
+  <tr><td>3</td><td><strong>局数太长</strong></td><td>"把赏金爆破改成5局制…8局太长了"</td><td>🔥🔥 22赞</td></tr>
+  <tr><td>4</td><td><strong>投降机制</strong></td><td>"加个投降不好吗，0-6谁还想玩啊"</td><td>🔥🔥 12赞</td></tr>
+  <tr><td>5</td><td><strong>武器数值提升</strong></td><td>"这些枪数值应该给到基础英雄级吧，比如m4给到雷神"</td><td>🔥 5赞</td></tr>
+</table>
+
+<p class="dim">* 诉求从正面、中性、负面评论中综合提取，按玩家点赞数排序</p>
+
+<!-- ═══ 五、关键词 ═══ -->
+<h2><span class="emoji">🔥</span>五、热议关键词</h2>
+<p style="font-size:13px;color:#8899bb">
+<span style="font-size:22px;color:#d4a017">公平</span>
+<span style="font-size:20px;color:#60a5fa">皮肤</span>
+<span style="font-size:19px;color:#4ade80">数值</span>
+<span style="font-size:19px;color:#fb7299">武器</span>
+<span style="font-size:18px;color:#fbbf24">CS/瓦</span>
+<span style="font-size:17px;color:#8899bb">竞技</span>
+<span style="font-size:16px;color:#60a5fa">排位</span>
+<span style="font-size:16px;color:#4ade80">经济</span>
+<span style="font-size:15px;color:#f87171">氪金</span>
+<span style="font-size:14px;color:#fbbf24">黑铁</span>
+<span style="font-size:14px;color:#8899bb">手感</span>
+<span style="font-size:13px;color:#60a5fa">体验</span>
+<span style="font-size:13px;color:#4ade80">平衡</span>
+<span style="font-size:12px;color:#fbbf24">买枪</span>
+</p>
+<p>"<strong>公平</strong>"是讨论量最大的词（45次），其次是"<strong>皮肤</strong>"（42次）和"<strong>数值/武器</strong>"（各40次）。"<strong>CS/瓦</strong>"对标讨论热度很高（68次合计），说明玩家自发将赏金爆破与CS经济系统对比，这是正面信号——意味着玩家认可其竞技定位。</p>
+
+<!-- ═══ 六、宣发建议 ═══ -->
+<h2><span class="emoji">📣</span>六、宣发策略建议</h2>
+
+<h3>✅ 应该做的</h3>
+<ul class="rec-list">
+  <li><strong>顺着「枪法说了算」的体感推。</strong>邀请KOL出实战测评，让他们自然表达公平竞技体感。官方只做玩法教学和赛事包装，不直接定义「公平」——让玩家替我们说。</li>
+  <li><strong>主推「皮肤激活」话题。</strong>制作"仓库翻新"类内容：展示哪些吃灰皮肤可以在赏金爆破中使用，配合话题挑战让玩家晒收藏。</li>
+  <li><strong>放大氪佬支持的声音。</strong>V9/V10玩家公开支持是极有价值的UGC，官方可转发/点赞（不加评价），让"氪佬也认可"的认知自然扩散。</li>
+  <li><strong>经济系统教学内容。</strong>"什么时候该ECO""怎么给队友发枪""连败补偿机制"——策略深度是赏金爆破区别于普通爆破的核心差异。</li>
+</ul>
+
+<h3>❌ 不应该做的</h3>
+<ul class="rec-list">
+  <li><strong>不主动打"公平竞技"标签。</strong>等于承认现有模式不公平，会激怒氪金玩家。让玩家/KOL自发传播这个概念。</li>
+  <li><strong>不说"零氪也能赢"。</strong>直接打氪金玩家的脸。</li>
+  <li><strong>不对比现有模式。</strong>暗示"以前不好"会伤害在线玩家。</li>
+  <li><strong>不正面回应"暴死"论调。</strong>用行动（匹配数据/赛事规划）替代辩论。</li>
+</ul>
+
+<h3>⚠️ 需要准备的回应口径</h3>
+<ul class="rec-list">
+  <li><strong>「氪金白费」：</strong>"赏金爆破是新增的竞技模式选项，不替代任何现有模式。您的武器皮肤可以带入使用，外观不变。我们希望为不同玩家提供更多选择。"</li>
+  <li><strong>「局数太长」：</strong>如数据证实确有问题，可预告"将根据玩家反馈持续优化赛制"。（注意：官方已在4/18提升加分幅度，说明在回应诉求）</li>
+  <li><strong>「分流/匹配问题」：</strong>不直接回应日活数据。通过社媒展示匹配速度实录、在线人数等正面信息。</li>
+</ul>
+
+<!-- ═══ 七、结论 ═══ -->
+<h2><span class="emoji">📝</span>七、总结与展望</h2>
+
+<p>赏金爆破上线首周，舆论经历了<strong>「首日爆发→体验吐槽→逐步回暖」</strong>的典型新模式曲线：</p>
+
+<p>1. <span class="highlight">正面基本盘已建立。</span>「数值统一」「皮肤激活」「枪法说了算」三大卖点被玩家自发认可，V9/V10氪佬中也有明确支持者。</p>
+
+<p>2. <span class="warn">「又臭又长」是必须解决的体验硬伤。</span>8局制+加分少是目前最集中、最高赞的负面反馈，直接影响玩家留存意愿。好消息是官方已在4/18提升加分幅度，需持续观察效果。</p>
+
+<p>3. <span class="neutral-text">「为时已晚」的悲观论调是CFM历史包袱，非赏金爆破独有问题。</span>不需要正面回应，用持续的版本迭代和活动运营来证明。</p>
+
+<p>4. <strong>下一步关注重点：</strong>①局数/加分优化后玩家反馈变化 ②匹配速度和在线人数趋势 ③枪械种类拓宽的诉求是否持续升温 ④首个赏金爆破赛事的舆论反馈</p>
+
+<div class="footer">
+  CFM赏金爆破舆情监测系统 · 数据采集自B站+TapTap · 自动化分析+人工校准<br>
+  报告生成时间：2026-04-20 · 看板实时链接：<a href="https://jinzheyuxiaomi-coder.github.io/cfm-sentiment/" style="color:#60a5fa">jinzheyuxiaomi-coder.github.io/cfm-sentiment</a>
+</div>
+
+</div>
+</body>
+</html>
